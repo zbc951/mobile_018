@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/javascript.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="top">
+            <div class="logo"><img src="./img/logo.png" alt=""></div>
+            <div class="language">
+                <select name="" id="">
+                    <option value="">繁體中文</option>
+                    <option value="">簡體中文</option>
+                    <option value="">English</option>
+                    <option value="">日本語</option>
+                </select>
+                <div class="languageIc">
+                    <i></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- home -->
+    <main class="home">
+        <!-- 登入前 -->
+        <div class="enterGroup ">
+            <div class="title">歡迎光臨!請先登入</div>
+            <label for="">
+                <input type="text" maxlength="16" minlength="8" placeholder="帳號">
+            </label>
+            <label for="">
+                <input type="password" maxlength="16" minlength="8" placeholder="密碼">
+                <i><p>?</p></i>
+            </label>
+            <div class="buttonGroup">
+                <button>登入</button>
+                <button>註冊</button>
+            </div>
+        </div>
+        <!-- 登入後 -->
+        <div class="enterAfter">
+            <div class="title">歡迎! user7787</div>
+            <div class="wallet">
+                <div class="waletGroup">
+                    <div class="pay">
+                        <span>錢包</span>
+                    </div>
+                    <div class="money">
+                        <p>1,000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="buttonGroup">
+                <button>存款</button>
+                <button>轉帳</button>
+                <button>提款</button>
+            </div>
+        </div>
+        <!-- 跑馬燈 -->
+        
+        <div class="marqueeGroup">
+            <div class="title">最新通知</div>
+            <div class="marquee">
+                <p>testeeeeee....................testestet</p>
+            </div>
+        </div>
+
+        <!-- 輪播 -->
+        <section class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/banner.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div> 
+            <div class="swiper-button-prev"></div> 
+            <div class="swiper-button-next"></div> 
+        </section>
+        <div class="mainGroup">
+            <ul class="navGroup">
+                <li>
+                    <i class="hot"></i>
+                    <p>熱門推薦</p>
+                </li>
+                <li>
+                    <i class="sport"></i>
+                    <p>體育賽事</p>
+                </li>
+                <li>
+                    <i class="live"></i>
+                    <p>真人娛樂</p>
+                </li>
+                <li>
+                    <i class="slot"></i>
+                    <p>老虎機</p>
+                </li>
+                <li>
+                    <i class="fish"></i>
+                    <p>捕魚機</p>
+                </li>
+                <li>
+                    <i class="board"></i>
+                    <p>棋牌遊戲</p>
+                </li>
+            </ul>
+            <ul class="gameGroup">
+                <li>
+                    <div class="imgGroup">
+                        <img src="./img/BWINLogo.png" class="logo" alt="">
+                        <img src="./img/BWINPic.png" class="pic" alt="">
+                    </div>
+                    <div class="gameOpacity">
+                        <img src="./img/gameBg.png" class="gameBg" alt="">
+                    </div>
+                    <div class="txtItem">
+                        <p>BWIN 老虎機</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgGroup">
+                        <img src="./img/IFUNLogo.png" class="logo" alt="">
+                        <img src="./img/IFUNPic.png" class="pic" alt="">
+                    </div>
+                    <div class="gameOpacity">
+                        <img src="./img/gameBg.png" class="gameBg" alt="">
+                    </div>
+                    <div class="txtItem">
+                        <p>IFUN 老虎機</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgGroup">
+                        <img src="./img/PPLogo.png" class="logo" alt="">
+                        <img src="./img/PPPic.png" class="pic" alt="">
+                    </div>
+                    <div class="gameOpacity">
+                        <img src="./img/gameBg.png" class="gameBg" alt="">
+                    </div>
+                    <div class="txtItem">
+                        <p>PP 老虎機</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgGroup">
+                        <img src="./img/BNGLogo.png" class="logo" alt="">
+                        <img src="./img/BNGPic.png" class="pic" alt="">
+                    </div>
+                    <div class="gameOpacity">
+                        <img src="./img/gameBg.png" class="gameBg" alt="">
+                    </div>
+                    <div class="txtItem">
+                        <p>BNG 老虎機</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgGroup">
+                        <img src="./img/RSGLogo.png" class="logo" alt="">
+                        <img src="./img/RSGPic.png" class="pic" alt="">
+                    </div>
+                    <div class="gameOpacity">
+                        <img src="./img/gameBg.png" class="gameBg" alt="">
+                    </div>
+                    <div class="txtItem">
+                        <p>RSG 老虎機</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgGroup">
+                        <img src="./img/JILILogo.png" class="logo" alt="">
+                        <img src="./img/JILIPic.png" class="pic" alt="">
+                    </div>
+                    <div class="gameOpacity">
+                        <img src="./img/gameBg.png" class="gameBg" alt="">
+                    </div>
+                    <div class="txtItem">
+                        <p>JILI 老虎機</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgGroup">
+                        <img src="./img/PNGLogo.png" class="logo" alt="">
+                        <img src="./img/PNGPic.png" class="pic" alt="">
+                    </div>
+                    <div class="gameOpacity">
+                        <img src="./img/gameBg.png" class="gameBg" alt="">
+                    </div>
+                    <div class="txtItem">
+                        <p>PNG 老虎機</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="imgGroup">
+                        <img src="./img/YGGLogo.png" class="logo" alt="">
+                        <img src="./img/YGGPic.png" class="pic" alt="">
+                    </div>
+                    <div class="gameOpacity">
+                        <img src="./img/gameBg.png" class="gameBg" alt="">
+                    </div>
+                    <div class="txtItem">
+                        <p>YGG 老虎機</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <ul>
+            <li>
+                <i class="present"></i>
+            </li>
+            <li>
+                <i class="book"></i>
+            </li>
+            <li>
+                <i class="homeIc"></i>
+            </li>
+            <li>
+                <i class="service"></i>
+            </li>
+            <li>
+                <i class="personal"></i>
+            </li>
+        </ul>
+    </footer>
+    <div class="bg"></div>
+</body>
+</html>

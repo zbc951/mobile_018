@@ -1,0 +1,70 @@
+//header
+header {
+    width: 100%;
+    height: auto;
+    
+    .top {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1vw 4vw;
+
+        .logo {
+            width: pxTovw(322);
+            height: pxTovw(68);
+            
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .language {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            cursor: pointer;
+            position: relative;
+
+            select {
+                width: 20vw;
+                height: 6vw;
+                border-radius: 5vw;
+                padding-left: 1.8vw;
+                font-size: 0.75rem;
+                font-weight: bold;
+                border: 0.2vw solid $langugaeColor_1;
+
+                option {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .languageIc {
+                width: 4.5vw;
+                height: 4.5vw;
+                background: $buttonBG_1;
+                position: absolute;
+                top: 50%;
+                right: 1vw;
+                transform: translateY(-50%);
+                border-radius: 50%;
+
+                i {
+                    width: 1vw;
+                    height: 1vw;
+                    border-color: $langugaeIcon_1 transparent transparent transparent;
+                    border-style: solid;
+                    border-width: 1vw 1vw 0 1vw ;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50% ,-50%);
+                }
+            }
+        }
+    }
+}

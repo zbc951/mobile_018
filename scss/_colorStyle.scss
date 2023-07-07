@@ -1,0 +1,160 @@
+//box-shadow
+$boxShadow: #000000;
+
+//enterGroup
+$enterBorder_1: #a93709;
+$enterBg_1: #ffffff88;
+$enterTitle_1: #005e5e;
+$inputBorder_1: #583d12;
+$enterButton_1: linear-gradient(to top,#015c5c 0% ,#039898 100%);
+$forgetColor_1: #ff7800;
+
+//language
+$buttonBG_1: linear-gradient(to top,#015c5c 0% ,#039898 100%);
+$langugaeColor_1:#583d12;
+$langugaeIcon_1: #ffffff;
+
+//wallet
+$walletBorder_1: #008787;
+$walletTxt_1: #67280e;
+$walletTxt_2: #f67a00;
+$walletTxt_3: #ffffff;
+$walletBg_1: #ffffff;
+$walletBg_2: linear-gradient(to top,#e4e1d7 0% ,#ffffff 68%);
+$walletButton_1: linear-gradient(to top,#d43a04 0% ,#f58500 100%);
+
+//swiper 
+$swiperButtonColor_1:#ffffff; 
+$swiperButtonBg_1: #000000;
+$swiperButtonHover_1: #0000006c;
+
+//gameBox {
+    $txtColor_1: #ffffff;
+    $txtBg_1: #000000;
+    $gameBg_1: linear-gradient(to top,#b810a2 0% ,#f12743 88% ,#0b0b0b 98% );
+    $gameBg_2: linear-gradient(to top,#20d2e2 6% ,#1a64d3 88% ,#0b0b0b 98% );
+    $gameBg_3: linear-gradient(to top,#026c1e 0% ,#71cb11 88% ,#0b0b0b 98% );
+    $gameBg_4: linear-gradient(to top,#f6f921 16% ,#ee9700 88% ,#0b0b0b 98% );
+    $gameBg_5: linear-gradient(to top,#9316ce 0% ,#1c90f2 88% ,#0b0b0b 98% );
+    $gameBg_6: linear-gradient(to top,#ff48a2 10% ,#cf0606 88% ,#0b0b0b 98% );
+    $gameBg_7: linear-gradient(to top,#f30f0a 0% ,#ff8c10 88% ,#0b0b0b 98% );
+    $gameBg_8: linear-gradient(to top,#09e2c1 0% ,#00af36 88% ,#0b0b0b 98% );
+
+//footer {
+    $footerButton_1: linear-gradient(to top,#005e5e 0% ,#007b7b 100%);
+    $footerHoverBg_1: #ffffff;
+
+//marquee
+@mixin marquee{
+    border-radius: 70% 70% 0 0;
+    border: 0.5vw solid #d7d2c4;
+    background: #0000006c;
+
+    .title {
+        font-size: 1rem;
+        font-weight: bold;
+        padding-left: 1vw;
+        color: #ffffff;
+        white-space: nowrap;
+    }
+    .marquee {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+
+        p {
+            display: inline-block;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #ffffff;
+            padding-left: 100%;
+            white-space: nowrap;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    }
+}
+
+//enter button
+@mixin enterButton_1{
+    background: linear-gradient(to top,#015c5c 0% ,#039898 100%);
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 1vw;
+    
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom,#015c5c 0% ,#039898 100%);
+    }
+}
+
+@mixin enterButton_2{
+    background: linear-gradient(to top,#d43a04 0% ,#f58500 100%);
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 1vw;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom,#d43a04 0% ,#f58500 100%);
+    }
+}
+// 登入後 按鈕
+@mixin enterAfter_1 {
+    background: $walletButton_1;
+    color: $walletTxt_3;
+    font-size: 1rem;
+    border-radius: 1vw;
+    
+    &:hover,&:active,&.active {
+        background: linear-gradient(to bottom,#d43a04 0% ,#f58500 100%);
+    }
+}
+
+//game type button
+@mixin gameType_1 {
+    background: linear-gradient(to top,#950b0b 0% ,#d01818 100%);
+    border: 0.5vw solid #ffe063;
+    border-radius: 2vw;  
+    
+    i {
+        width: 9vw;
+        height: 9vw;
+        &.hot {
+            background-position-x: 0%;
+        }
+        &.sport {
+            background-position-x: 20%;
+        }
+        &.live {
+            background-position-x: 40%;
+        }
+        &.slot {
+            background-position-x: 60%;
+        }
+        &.fish {
+            background-position-x: 80%;
+        }
+        &.board {
+            background-position-x: 100%;
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top,#870420 0% ,#710505 100%);
+        border: 0.5vw solid #ffffff;
+    }
+}

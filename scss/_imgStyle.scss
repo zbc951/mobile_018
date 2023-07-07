@@ -1,0 +1,21 @@
+body .bg {
+    background: url("../img/bg.png") no-repeat;
+    background-size: cover;
+}
+
+.home .mainGroup .navGroup li i {
+    background: url("../img/iconGroup.png") no-repeat;
+    background-size: 600%;
+}
+.home .mainGroup .navGroup li:hover i {
+    background: url("../img/iconGroupHover.png") no-repeat;
+    background-size: 600%;
+}
+footer ul li i {
+    background: url("../img/footerIc.png") no-repeat;
+    background-size: 500%;
+}
+footer ul li:hover i {
+    background: url("../img/footerIcHover.png") no-repeat;
+    background-size: 500%;
+}

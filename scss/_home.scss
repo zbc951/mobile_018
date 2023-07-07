@@ -1,0 +1,454 @@
+.home {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    //登入前
+    .enterGroup {
+        width: pxTovw(678);
+        height: pxTovw(613);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 0.3vw solid $enterBorder_1;
+        border-radius: 2vw;
+        background: $enterBg_1;
+        margin-left: 4vw;
+
+        &.display {
+            display: none;
+        }
+
+        .title {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: $enterTitle_1;
+            margin-bottom: 5vw;
+        }
+
+        label {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            
+            input {
+                width: pxTovw(550);
+                height: pxTovw(100);
+                border-radius: 5vw;
+                border: 0.2vw solid $inputBorder_1;
+                font-size: 1rem;
+                margin-bottom: 2vw;
+                padding-left: 3vw;
+            }
+            i {
+                width: 6vw;
+                height: 6vw;
+                border: 0.3vw solid $forgetColor_1;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 40%;
+                transform: translateY(-50%);
+                right: 6vw;
+                cursor: pointer;
+
+                p {
+                    font-size: 1rem;
+                    font-weight: bold;
+                    color: $forgetColor_1;
+                }
+            }
+        }
+        //按鈕
+        .buttonGroup {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            button {
+                width: pxTovw(230);
+                height: pxTovw(125);
+                margin:0 1vw;
+                @include enterButton_1;
+
+                &:last-child {
+                    @include enterButton_2;
+                }
+            }
+        }
+    }
+    //登入後
+    .enterAfter {
+        width: pxTovw(678);
+        height: pxTovw(421);
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 0.3vw solid $enterBorder_1;
+        border-radius: 2vw;
+        background: $enterBg_1;
+        margin:0 0 18vw 4vw;
+    
+
+        &.display {
+            display: flex;
+        }
+
+        .title {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: $enterTitle_1;
+            margin-bottom: 2vw;
+        }
+        .wallet {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2vw;
+
+            .waletGroup {
+                width: 48vw;
+                height: 8vw;
+                // border: 0.5vw solid $walletBorder_1;
+                border-radius: 20vw;
+                display: flex;
+                align-items: baseline;
+                justify-content: space-around;
+                background: $walletBg_1;
+                position: relative;
+
+                .pay {
+                    width: 15vw;
+                    height: 8vw;
+                    border: 0.5vw solid $walletBorder_1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: $walletBg_2;
+                    border-radius: 20vw 0 0 20vw;
+
+                    span {
+                        font-size: 1rem;
+                        font-weight: bold;
+                        color: $walletTxt_1;
+                    }
+                }
+                .money {
+                    width: 33vw;
+                    height: 8vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 0.5vw solid $walletBorder_1;
+                    border-left: 0;
+                    border-radius: 0 20vw 20vw 0;
+
+                    p {
+                        font-size: 1rem;
+                        font-weight: bold;
+                        color: $walletTxt_2;
+                    }
+                }
+            }
+        }
+        .buttonGroup {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                width: 15vw;
+                height: 10vw;
+                margin: 0 1vw;
+                @include enterAfter_1;
+            }
+        }
+    }
+    //跑馬燈
+    .marqueeGroup {
+        width: 90vw;
+        height: 15vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 0.5rem;
+        margin: 5vw auto;
+        @include marquee;
+
+    }
+
+    //輪播
+    .swiper {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding-bottom: 8vw;
+
+        .swiper-wrapper {
+
+            .swiper-slide {
+                width: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+
+                img {
+                    width: 70%;
+                    height: auto;
+                    margin: 0 auto;
+                    box-shadow: 0.1vw 0.1vw 1.5vw 0.1vw $boxShadow;
+                }
+            }
+        }
+        .swiper-pagination {
+            position: relative;
+            bottom: -1vw;
+
+            .swiper-pagination-bullet {
+                width: 10vw;
+                height: 2vw;
+                border-radius: 0;
+                background: $swiperButtonColor_1;
+            }
+            .swiper-pagination-bullet-active {
+                width: 10vw;
+                height: 2vw;
+                border-radius: 0;
+                background: $swiperButtonColor_1;
+            }
+        }
+
+        .swiper-button-prev {
+            width: 12vw;
+            height: 12vw;
+            border: 0.5vw solid $swiperButtonColor_1;
+            border-radius: 50%;
+            top: 12vw;
+            left: 5vw;
+            right: unset;
+
+            &:hover,&:active,&.active {
+                background: $swiperButtonHover_1;
+            }
+            &::after {
+                content: "";
+                width: 5vw;
+                height: 2vw;
+                border-style: solid;
+                border-width: 0.5vw;
+                border-color: transparent transparent $swiperButtonColor_1 $swiperButtonColor_1;
+                transform: skew(-45deg);
+                position: absolute;
+                top: 4vw;
+                left: 4vw;
+            }
+        }
+        .swiper-button-next {
+            width: 12vw;
+            height: 12vw;
+            border: 0.5vw solid $swiperButtonColor_1;
+            border-radius: 50%;
+            top: 12vw;
+            left: unset;
+            right: 5vw;
+            
+            &:hover,&:active,&.active {
+                background: $swiperButtonHover_1;
+            }
+
+            &::after {
+                content: "";
+                width: 5vw;
+                height: 2vw;
+                border-style: solid;
+                border-width: 0.5vw;
+                border-color: transparent $swiperButtonColor_1 $swiperButtonColor_1 transparent;
+                transform: skew(45deg);
+                position: absolute;
+                top: 4vw;
+                right: 4vw;
+            }
+        }
+    }
+    .mainGroup {
+        width: 90%;
+        height: auto;
+        display: flex;
+        margin: 0 auto;
+        padding: 1vw 0;
+
+        .navGroup {
+            width: 50%;
+            height: auto;
+
+            li {
+                width: 20vw;
+                height: 20vw;
+                @include gameType_1;
+                margin-bottom: 2vw; 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                box-shadow: 0.1vw 0.1vw 1.5vw 0.1vw $boxShadow;
+            }
+        }
+        .gameGroup {
+            width: 100%;
+            height: auto;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            grid-template-columns: repeat(2,1fr);
+            gap: 2vw;
+
+            li {
+                width: 32vw;
+                height: 32vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                cursor: pointer;
+                box-shadow: 0.1vw 0.1vw 1.5vw 0.1vw $boxShadow;
+
+                &:hover,&:active,&.active {
+                    transform: scale(0.95);
+                    
+                }
+                
+                &:nth-child(1) {
+                    background: $gameBg_1;
+                }
+                &:nth-child(2) {
+                    background: $gameBg_2;
+                }
+                &:nth-child(3) {
+                    background: $gameBg_3;
+                }
+                &:nth-child(4) {
+                    background: $gameBg_4;
+                }
+                &:nth-child(5) {
+                    background: $gameBg_5;
+                }
+                &:nth-child(6) {
+                    background: $gameBg_6;
+                }
+                &:nth-child(7) {
+                    background: $gameBg_7;
+                }
+                &:nth-child(8) {
+                    background: $gameBg_8;
+                }
+
+                .imgGroup {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+
+                    .logo {
+                        width: 40%;
+                        height: auto;
+                        position: absolute;
+                        bottom: 8vw;
+                        left: 1vw;
+                        z-index: 2;
+                        object-fit: cover;
+                        animation: gameLogo 1.8s linear infinite;
+
+                    }
+                    @keyframes gameLogo {
+                        0% {
+                            transform: scale(1);
+                        }
+                        50% {
+                            transform: scale(1.2);
+                        }
+                        100% {
+                            transform: scale(1);
+                        }
+                    }
+
+                    .pic {
+                        width: 100%;
+                        height: auto;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        z-index: 3;
+
+                    }
+                }
+                .gameOpacity {
+                    width: 100%;
+                    height: auto;
+                    position: absolute;
+                    top: 12vw;
+                    left: 0.1vw;
+                    opacity: 0.7;
+
+                    .gameBg {
+                        width: 100%;
+                        height: auto;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50% ,-50%);
+                        z-index: -1;
+                    }
+                }
+                .txtItem {
+                    width: 32vw;
+                    height: 7vw;
+                    background: $txtBg_1;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50% 50% 0 0;
+                    z-index: 4;
+
+                    p {
+                        font-size: 1rem;
+                        font-weight: bold;
+                        color: $txtColor_1;
+                    }
+                }
+            }
+        }
+    }
+}

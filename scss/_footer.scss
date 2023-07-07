@@ -1,0 +1,64 @@
+footer {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 5vw;
+
+    ul {
+        width: 90%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        
+        li {
+            width: 20vw;
+            height: 12vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $footerButton_1;
+            margin: 0 1vw;
+            border-radius: 1vw;
+            cursor: pointer;
+            box-shadow: 0.1vw 0.1vw 1.5vw 0.1vw $boxShadow;
+
+            i {
+                width: 8vw;
+                height: 8vw;
+
+                &.present {
+                    background-position: -0.28%;
+                }
+                &.book {
+                    background-position: 24.8%;
+                }
+                &.homeIc {
+                    background-position: 50%;
+                }
+                &.service {
+                    background-position: 75%;
+                }
+                &.personal {
+                    background-position: 100%;
+                }
+            }
+            &:hover,&:active,&.active {
+                background: $footerHoverBg_1;
+                animation: footerHover 1.5s linear infinite;
+            }
+            @keyframes footerHover {
+                0% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-20%);
+                }
+                100% {
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}
